@@ -6,7 +6,7 @@ services:
     network_mode: host  
 
     volumes:
-      - ..:/home/exercism       # mount project directory
+      - ..:/home/exercism/workdir       # mount project directory
 
     stdin_open: true
     tty: true

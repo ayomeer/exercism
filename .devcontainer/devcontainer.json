@@ -3,7 +3,7 @@
     "name": "exercism-devcontainer",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/home/exercism",
+    "workspaceFolder": "/home/exercism/workdir",
     "customizations": {
         "vscode": {
             "extensions": [
