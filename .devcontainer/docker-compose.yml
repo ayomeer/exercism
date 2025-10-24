@@ -1,0 +1,12 @@
+services:
+  app: 
+    image: exercism
+    user: "1000:1000"
+    container_name: exercism-devcontainer
+    network_mode: host  
+
+    volumes:
+      - ..:/app       # mount project directory
+
+    stdin_open: true
+    tty: true
