@@ -1,0 +1,12 @@
+[user]
+	name = DESKTOP-0SRFR83\\ayome
+	email = andreas.kuhn@bluewin.ch
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[core]
+	symlinks = true
+[credential]
+	helper = "!f() { /home/exercism/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node /tmp/vscode-remote-containers-cb6731c3-f091-4534-8129-b775455608f9.js git-credential-helper $*; }; f"

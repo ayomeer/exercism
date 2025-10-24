@@ -1,0 +1,5 @@
+# ignore
+.vscode-server/
+.cache/
+.dotnet/
+.ssh/
