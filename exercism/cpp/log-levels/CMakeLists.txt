@@ -10,7 +10,7 @@ project(${exercise} CXX)
 # Get a source filename from the exercise name by replacing -'s with _'s
 string(REPLACE "-" "_" file ${exercise})
 
-# Implementation could be only a header
+# Implementation could be only a header -> set exercise_cpp variable accordingly
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${file}.cpp)
     set(exercise_cpp ${file}.cpp)
 else()
@@ -31,7 +31,7 @@ elseif(EXERCISM_TEST_SUITE)
     # header, we need this define to use the correct one.
     target_compile_definitions(${exercise} PRIVATE EXERCISM_TEST_SUITE)
 else()
-    # Build executable from sources and headers
+    # Build executable from sources and headers (build objects from cpp-Files and link)
     add_executable(${exercise} ${file}_test.cpp test/tests-main.cpp)
 endif()
 

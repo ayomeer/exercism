@@ -13,7 +13,8 @@
                 "ms-python.python",
                 "ms-iot.vscode-ros",
                 "redhat.vscode-xml",
-                "yy0931.save-as-root"
+                "yy0931.save-as-root",
+                "twxs.cmake"
             ]
         }
     },
