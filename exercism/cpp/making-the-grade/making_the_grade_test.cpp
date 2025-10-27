@@ -70,7 +70,7 @@ TEST_CASE("Test letter grades: 81", "[task_3]") {
 
     REQUIRE(expected == actual);
 }
-#if defined(EXERCISM_RUN_ALL_TESTS)
+
 TEST_CASE("Rank one student", "[task_4]") {
     vector<int> grades{82};
     vector<string> names{"Betty"};
@@ -121,5 +121,5 @@ TEST_CASE("Several perfect scores", "[task_5]") {
 
     REQUIRE(expected == actual);
 }
-
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif

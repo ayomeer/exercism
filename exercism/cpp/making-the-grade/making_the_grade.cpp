@@ -44,15 +44,43 @@ std::array<int, 4> letter_grades(int highest_score) {
 
 // Organize the student's rank, name, and grade information in ascending order.
 std::vector<std::string> student_ranking(
-    std::vector<int> student_scores, std::vector<std::string> student_names) {
-    // TODO: Implement student_ranking
-    return {};
+    std::vector<int> student_scores, 
+    std::vector<std::string> student_names
+){
+    std::vector<std::string> organizedVector;
+    organizedVector.reserve(student_names.size());
+
+    int i{0};
+    for(std::string name : student_names){
+        organizedVector.emplace_back( 
+            std::to_string(i+1) + ". " +            // Rank
+            name + ": " +                           // Name
+            std::to_string(student_scores.at(i))    // Score
+        );
+        i++;
+    }
+    return organizedVector;
 }
 
 // Create a string that contains the name of the first student to make a perfect
 // score on the exam.
-std::string perfect_score(std::vector<int> student_scores,
-                          std::vector<std::string> student_names) {
-    // TODO: Implement perfect_score
-    return "";
+std::string perfect_score(
+    std::vector<int> student_scores,
+    std::vector<std::string> student_names
+){
+    std::string nameFirstPerfect{""};
+
+    int i{0};
+    for(int score : student_scores){
+        std::string outp{std::to_string(score)};
+
+        if(score == 100){
+            nameFirstPerfect = student_names.at(i);
+            outp += " <-- This one's perfect!";
+            break;
+        }
+        i++;
+    }
+
+    return nameFirstPerfect;
 }
