@@ -76,7 +76,6 @@ std::string perfect_score(
 
         if(score == 100){
             nameFirstPerfect = student_names.at(i);
-            outp += " <-- This one's perfect!";
             break;
         }
         i++;
