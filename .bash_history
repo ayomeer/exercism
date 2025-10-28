@@ -59,3 +59,65 @@ code ~/.bashrc
 ls ~ -a
 ls /home/exercism
 ls /home/exercism -a
+exercism download --track=cpp --exercise=lasagna
+exercism download --track=cpp --exercise=last_will
+exercism download --track=cpp --exercise=last-will
+exercism download --track=cpp --exercise=making-the-grade
+cd exercism/cpp/making-the-grade/
+mkdir build && cd build
+cmake ..
+make
+cmake ..
+make
+cmake ..
+make
+make
+make
+make
+make
+cd ..
+mkdir build_quicktest
+cd build_quicktest/
+cmake ..
+cmake ..
+cmake ..
+cmake ..
+cmake ..
+cmake ..
+make
+cmake ..
+make
+ls
+mytest
+./mytest 
+make
+./mytest 
+cmake ..
+make
+cmake ..
+make
+ls
+./mytest 
+make
+./mytest 
+git add .
+cd ..
+cd build
+cmake ..
+make 
+make 
+make 
+cmake ..
+make 
+make 
+make 
+make 
+make 
+make 
+make 
+make 
+make 
+make 
+cd ..
+exercism 
+exercism submit making_the_grade.cpp
