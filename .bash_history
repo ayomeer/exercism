@@ -121,3 +121,104 @@ make
 cd ..
 exercism 
 exercism submit making_the_grade.cpp
+cd exercism/
+exercism download --track=cpp --exercise=ellens-alien-game
+mkdir build
+cd build
+cmake ..
+cd ..
+rm -rf build
+ls
+cd cpp/ellens-alien-game/
+ls
+mkdir build && cd build
+cmake ..
+make
+make clean
+make
+make
+make
+make
+make
+make
+ls
+./ellens-alien-game 
+cd ..
+exercism submit ellens_alien_game.cpp
+cd ..
+cd ..
+exercism download --track=cpp --exercise=election-day
+cd cpp/election-day/
+ls
+mkdir build
+cd build
+cmake
+cmake ..
+make
+make
+make
+./election-day 
+make
+make
+make
+make
+clear
+make
+clear
+make
+make
+make
+make
+make
+cd ..
+exercism submit election_day.cpp
+cd ..
+cd ..
+exercism download --track=cpp --exercise=troll-the-trolls
+cd cpp/troll-the-trolls/
+mkdir build && cd build
+cmake ..
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+cd ..
+exercism submit troll_the_trolls.cpp
+exercism download --track=cpp --exercise=doctor-data
+cd exercism/cpp/doctor-data/
+mkdir build && cd build
+cmake ..
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+make
+cd ..
+exercism submit
+exercism submit doctor_data.cpp doctor_data.h

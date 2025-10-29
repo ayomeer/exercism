@@ -9,4 +9,4 @@
 [core]
 	symlinks = true
 [credential]
-	helper = "!f() { /home/exercism/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node /tmp/vscode-remote-containers-1b51642e-7a99-433f-af3e-1b69d0745a91.js git-credential-helper $*; }; f"
+	helper = "!f() { /home/exercism/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node /tmp/vscode-remote-containers-9fded6ce-f63e-4c6f-a59d-0c0b9ddaf045.js git-credential-helper $*; }; f"
