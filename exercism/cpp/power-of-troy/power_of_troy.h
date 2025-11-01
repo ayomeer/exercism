@@ -29,4 +29,9 @@ class Human{
     std::shared_ptr<power> influenced_by{nullptr};
 };
 
+// Loose functions
+void give_new_artifact(Human& human, std::string artifact_name);
+void exchange_artifacts(
+    std::unique_ptr<artifact>& artifact1, 
+    std::unique_ptr<artifact>& artifact2);
 }  // namespace troy
