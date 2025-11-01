@@ -222,3 +222,4 @@ make
 cd ..
 exercism submit
 exercism submit doctor_data.cpp doctor_data.h
+exercism download --track=cpp --exercise=power-of-troy
