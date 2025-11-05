@@ -5,6 +5,8 @@
 
 namespace troy {
 
+// struct data classes, whose objects are going to be created on the heap 
+// and pointed to by Human member variables
 struct artifact {
     // constructors needed until C++20 (so smart pointer can forward construction arguments to it)
     artifact(std::string name) : name(name) {}
@@ -17,7 +19,8 @@ struct power {
     std::string effect;
 };
 
-class Human{
+// Human class
+class human{
     public:
     // possession: smart pointer to artifact (exclusive), default: nullptr
     std::unique_ptr<artifact> possession{nullptr};
@@ -30,8 +33,13 @@ class Human{
 };
 
 // Loose functions
-void give_new_artifact(Human& human, std::string artifact_name);
+void give_new_artifact(human& human, std::string artifact_name);
 void exchange_artifacts(
     std::unique_ptr<artifact>& artifact1, 
-    std::unique_ptr<artifact>& artifact2);
+    std::unique_ptr<artifact>& artifact2
+);
+void manifest_power(human& human, std::string power_effect);
+void use_power(human& human_caster, human& human_target);
+int power_intensity(human& human_caster);
+
 }  // namespace troy
